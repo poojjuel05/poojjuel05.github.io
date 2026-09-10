@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自古英雄出少年演员表-电视剧主演阵容与角色介绍</title>
+    <meta name="description" content="自古英雄出少年演员表大全，详细介绍电视剧自古英雄出少年主演名单、配角阵容与角色关系，帮助观众快速了解剧中人物形象与演员背景。">
+    <meta name="keywords" content="自古英雄出少年演员表,自古英雄出少年主演,自古英雄出少年角色,自古英雄出少年电视剧">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: #f4f0e8;
+            color: #2c2c2c;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* 头部 */
+        .site-header {
+            background: linear-gradient(135deg, #5d2e1b, #8b4513);
+            padding: 18px 0;
+            border-bottom: 4px solid #d4a24c;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-icon {
+            font-size: 2.2rem;
+            color: #f0d48a;
+        }
+        .logo-text {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #fff4e0;
+            letter-spacing: 2px;
+        }
+        .logo-sub {
+            font-size: 0.85rem;
+            color: #e6cfa0;
+            margin-top: 2px;
+        }
+        .search-box {
+            display: flex;
+            background: #fff;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        .search-box input {
+            border: none;
+            outline: none;
+            padding: 10px 16px;
+            width: 220px;
+            font-size: 0.9rem;
+        }
+        .search-box button {
+            background: #d4a24c;
+            border: none;
+            color: #3b1f0b;
+            padding: 0 18px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        /* 导航 */
+        .main-nav {
+            background: #3b1f0b;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+        .main-nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .main-nav ul li a {
+            display: block;
+            padding: 14px 24px;
+            color: #f0e2cc;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+        .main-nav ul li a:hover,
+        .main-nav ul li a.active {
+            color: #f5d78a;
+            border-bottom-color: #f5d78a;
+            background: rgba(255,255,255,0.05);
+        }
+        /* 首屏 Hero */
+        .hero-section {
+            background: linear-gradient(120deg, #1a0f0a 0%, #4a2a17 60%, #6b3a1f 100%);
+            color: #f5ead6;
+            padding: 60px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section::before {
+            content: "⚔";
+            position: absolute;
+            font-size: 15rem;
+            right: -30px;
+            top: -60px;
+            opacity: 0.08;
+            transform: rotate(15deg);
+        }
+        .hero-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+        }
+        .hero-text {
+            flex: 1 1 500px;
+        }
+        .hero-text h1 {
+            font-size: 2.6rem;
+            line-height: 1.3;
+            margin-bottom: 16px;
+            color: #ffe9b8;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+        }
+        .hero-text p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #dccdb0;
+            max-width: 600px;
+        }
+        .hero-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .hero-tags span {
+            background: rgba(240, 212, 138, 0.2);
+            border: 1px solid #d4a24c;
+            padding: 5px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #f0d48a;
+        }
+        .hero-poster {
+            flex: 0 0 260px;
+            text-align: center;
+        }
+        .poster-placeholder {
+            width: 220px;
+            height: 300px;
+            background: linear-gradient(145deg, #7a4a28, #3b1f0b);
+            border-radius: 12px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 3px solid #d4a24c;
+            color: #f0d48a;
+            position: relative;
+        }
+        .poster-placeholder::after {
+            content: "电视剧";
+            position: absolute;
+            bottom: 12px;
+            font-size: 1rem;
+            letter-spacing: 3px;
+        }
+        /* 信息栏 */
+        .info-bar {
+            background: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #e5dcc8;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+        }
+        .info-item .label {
+            color: #8a6d3b;
+            font-weight: 600;
+            min-width: 60px;
+        }
+        /* 主要演员表 */
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #4a2a17;
+            margin: 40px 0 20px;
+            padding-left: 16px;
+            border-left: 5px solid #d4a24c;
+            position: relative;
+        }
+        .cast-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+        .cast-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #eee3d0;
+        }
+        .cast-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(90, 60, 30, 0.15);
+        }
+        .cast-photo {
+            height: 220px;
+            background: linear-gradient(135deg, #d4c0a0, #b8a080);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: #5d3a1e;
+            background-image: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.3) 0%, transparent 50%);
+        }
+        .cast-info {
+            padding: 16px;
+        }
+        .cast-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #3b1f0b;
+            margin-bottom: 4px;
+        }
+        .cast-role {
+            font-size: 0.95rem;
+            color: #8a6d3b;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .cast-desc {
+            font-size: 0.88rem;
+            color: #6b5a48;
+            line-height: 1.5;
+        }
+        /* 角色关系 */
+        .relation-section {
+            background: #fff;
+            border-radius: 16px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+        .relation-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+        }
+        .relation-item {
+            background: #faf6ee;
+            border-left: 4px solid #d4a24c;
+            padding: 14px;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.95rem;
+        }
+        /* 幕后介绍 */
+        .crew-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .crew-card {
+            background: #fff;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            border-top: 4px solid #8b4513;
+        }
+        .crew-card h3 {
+            color: #4a2a17;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+        }
+        .crew-card p {
+            font-size: 0.95rem;
+            color: #5a4a3a;
+        }
+        .crew-card .role-label {
+            display: inline-block;
+            background: #f0e6d4;
+            padding: 3px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #6b3a1f;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        /* 剧情概述 */
+        .story-section {
+            background: linear-gradient(135deg, #faf6ee, #f0e8d8);
+            padding: 40px;
+            border-radius: 20px;
+            margin: 30px 0;
+            border: 1px solid #e5dcc8;
+        }
+        .story-section h2 {
+            color: #4a2a17;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        .story-section p {
+            margin-bottom: 16px;
+            font-size: 1.02rem;
+            color: #4a3a2a;
+        }
+        /* 常见问题 */
+        .faq-section {
+            margin: 40px 0;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 12px;
+            margin-bottom: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            overflow: hidden;
+            border: 1px solid #e9dfcd;
+        }
+        .faq-question {
+            padding: 18px 24px;
+            font-weight: 600;
+            color: #4a2a17;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fdfbf7;
+            font-size: 1.05rem;
+        }
+        .faq-question::after {
+            content: "+";
+            font-size: 1.5rem;
+            color: #d4a24c;
+            font-weight: 400;
+        }
+        .faq-answer {
+            padding: 0 24px 18px;
+            color: #5a4a3a;
+            font-size: 0.95rem;
+            display: none;
+            border-top: 1px dashed #e5dcc8;
+            padding-top: 14px;
+        }
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        .faq-item.active .faq-question::after {
+            content: "−";
+        }
+        /* 页脚 */
+        .site-footer {
+            background: #2a1a0e;
+            color: #c9b89a;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+        }
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+        .footer-links a {
+            color: #c9b89a;
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        .footer-links a:hover {
+            background: rgba(255,255,255,0.1);
+            color: #f0d48a;
+        }
+        .copyright {
+            text-align: center;
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            color: #8a7a63;
+        }
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 14px;
+                text-align: center;
+            }
+            .search-box {
+                width: 100%;
+                max-width: 400px;
+            }
+            .search-box input {
+                flex: 1;
+                width: auto;
+            }
+            .main-nav ul li a {
+                padding: 12px 14px;
+                font-size: 0.9rem;
+            }
+            .hero-text h1 {
+                font-size: 1.9rem;
+            }
+            .hero-content {
+                flex-direction: column-reverse;
+            }
+            .hero-poster {
+                flex: 0 0 auto;
+            }
+            .poster-placeholder {
+                width: 180px;
+                height: 250px;
+                font-size: 3rem;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+            .story-section {
+                padding: 24px;
+            }
+            .cast-grid {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                gap: 14px;
+            }
+            .cast-photo {
+                height: 160px;
+                font-size: 3rem;
+            }
+            .relation-list {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 12px;
+            }
+            .logo-text {
+                font-size: 1.3rem;
+            }
+            .main-nav ul {
+                justify-content: flex-start;
+                overflow-x: auto;
+                flex-wrap: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+            .main-nav ul li a {
+                white-space: nowrap;
+                padding: 12px 12px;
+            }
+            .info-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+            .cast-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .cast-photo {
+                height: 140px;
+            }
+            .crew-section {
+                grid-template-columns: 1fr;
+            }
+            .hero-text h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo-area">
+            <div class="logo-icon">🎬</div>
+            <div>
+                <div class="logo-text">影剧资料馆</div>
+                <div class="logo-sub">电视剧 · 演员 · 角色全收录</div>
+            </div>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="搜索演员或剧名..." aria-label="搜索">
+            <button type="button">搜索</button>
+        </div>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <ul>
+        <li><a href="#" class="active">首页</a></li>
+        <li><a href="#">演员表</a></li>
+        <li><a href="#">角色介绍</a></li>
+        <li><a href="#">剧情梗概</a></li>
+        <li><a href="#">幕后团队</a></li>
+        <li><a href="#">剧集资讯</a></li>
+    </ul>
+</nav>
+
+<main>
+    <!-- 首屏Hero -->
+    <section class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>自古英雄出少年演员表</h1>
+                <p>完整收录电视剧《自古英雄出少年》的主要演员阵容、角色定位与人物关系，帮助观众快速了解这部武侠传奇剧中的每一位英雄少年与实力派配角。</p>
+                <div class="hero-tags">
+                    <span>📺 电视剧</span>
+                    <span>⚔ 武侠 / 古装</span>
+                    <span>👥 群像剧</span>
+                    <span>⭐ 实力派阵容</span>
+                </div>
+            </div>
+            <div class="hero-poster">
+                <div class="poster-placeholder">⚔️</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 剧集信息栏 -->
+    <div class="info-bar">
+        <div class="container info-grid">
+            <div class="info-item"><span class="label">剧名</span> 自古英雄出少年</div>
+            <div class="info-item"><span class="label">类型</span> 武侠 / 古装 / 传奇</div>
+            <div class="info-item"><span class="label">集数</span> 约30集</div>
+            <div class="info-item"><span class="label">题材</span> 少年英雄成长</div>
+            <div class="info-item"><span class="label">首播</span> 电视平台</div>
+        </div>
+    </div>
+
+    <!-- 主要演员表 -->
+    <section class="container">
+        <h2 class="section-title">✨ 主要演员表</h2>
+        <div class="cast-grid">
+            <!-- 演员卡片 -->
+            <article class="cast-card">
+                <div class="cast-photo">🧑‍🎤</div>
+                <div class="cast-info">
+                    <div class="cast-name">释小龙</div>
+                    <div class="cast-role">饰演 铁蛋 / 少年英雄</div>
+                    <div class="cast-desc">武术童星出身，动作戏干净利落，塑造了机智勇敢的孤儿铁蛋一角，是全剧的核心人物之一。</div>
+                </div>
+            </article>
+            <article class="cast-card">
+                <div class="cast-photo">👩‍🎤</div>
+                <div class="cast-info">
+                    <div class="cast-name">白静</div>
+                    <div class="cast-role">饰演 柳青青</div>
+                    <div class="cast-desc">温柔坚韧的女主角，与铁蛋在患难中相识，一路同行对抗恶势力，展现了巾帼不让须眉的气概。</div>
+                </div>
+            </article>
+            <article class="cast-card">
+                <div class="cast-photo">🧔</div>
+                <div class="cast-info">
+                    <div class="cast-name">吴磊</div>
+                    <div class="cast-role">饰演 小顺子（少年时期）</div>
+                    <div class="cast-desc">童星时期参演，饰演机灵古怪的小顺子，为剧情增添了许多轻松幽默的瞬间。</div>
+                </div>
+            </article>
+            <article class="cast-card">
+                <div class="cast-photo">👨</div>
+                <div class="cast-info">
+                    <div class="cast-name">郑佩佩</div>
+                    <div class="cast-role">饰演 静虚师太</div>
+                    <div class="cast-desc">老戏骨倾情出演，饰演一代高人静虚师太，武功高强且心怀慈悲，是少年们的引路人。</div>
+                </div>
+            </article>
+            <article class="cast-card">
+                <div class="cast-photo">👨‍🦰</div>
+                <div class="cast-info">
+                    <div class="cast-name">计春华</div>
+                    <div class="cast-role">饰演 秃鹰</div>
+                    <div class="cast-desc">经典反派专业户，饰演心狠手辣的大反派秃鹰，与少年英雄们的对决是全剧高潮所在。</div>
+                </div>
+            </article>
+            <article class="cast-card">
+                <div class="cast-photo">🧓</div>
+                <div class="cast-info">
+                    <div class="cast-name">于承惠</div>
+                    <div class="cast-role">饰演 老英雄 / 风尘侠隐</div>
+                    <div class="cast-desc">武术大家饰演的隐世高人，在关键时刻出手相救，一身剑术出神入化，传递侠义精神。</div>
+                </div>
+            </article>
+            <article class="cast-card">
+                <div class="cast-photo">👧</div>
+                <div class="cast-info">
+                    <div class="cast-name">谢苗</div>
+                    <div class="cast-role">饰演 仇千斤</div>
+                    <div class="cast-desc">与铁蛋不打不相识的好友，性格豪爽，力大无穷，最终成为并肩作战的兄弟。</div>
+                </div>
+            </article>
+            <article class="cast-card">
+                <div class="cast-photo">👵</div>
+                <div class="cast-info">
+                    <div class="cast-name">李明启</div>
+                    <div class="cast-role">饰演 客栈老板娘</div>
+                    <div class="cast-desc">市井中隐藏身份的高手，表面精明泼辣，实则在暗中帮助少年们，是全剧的亮点配角。</div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- 角色关系与介绍 -->
+    <section class="container">
+        <div class="relation-section">
+            <h2 style="color:#4a2a17;margin-bottom:20px;font-size:1.6rem;">📜 主要角色关系图</h2>
+            <div class="relation-list">
+                <div class="relation-item">
+                    <strong>铁蛋</strong> ← 孤儿，被静虚师太收留，与柳青青青梅竹马
+                </div>
+                <div class="relation-item">
+                    <strong>柳青青</strong> ← 铁蛋的伙伴，身世神秘，与铁蛋互生情愫
+                </div>
+                <div class="relation-item">
+                    <strong>秃鹰</strong> ← 全剧最大反派，追杀铁蛋一行人的幕后黑手
+                </div>
+                <div class="relation-item">
+                    <strong>小顺子</strong> ← 铁蛋的小跟班，机灵鬼马，负责活跃气氛
+                </div>
+                <div class="relation-item">
+                    <strong>仇千斤</strong> ← 铁蛋的对手兼好友，被其气魄折服
+                </div>
+                <div class="relation-item">
+                    <strong>静虚师太</strong> ← 少年们的恩师，传授武艺与侠义之道
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 剧情概述 -->
+    <section class="container">
+        <div class="story-section">
+            <h2>📖 剧情速览</h2>
+            <p>《自古英雄出少年》以清朝末年为背景，讲述了一群少年英雄在乱世中成长的故事。年幼的铁蛋因身怀重要秘密而遭到以秃鹰为首的恶势力追杀，在逃亡途中结识了柳青青、小顺子、仇千斤等伙伴。</p>
+            <p>他们一路经历重重磨难，从互不信任到生死与共，在静虚师太等前辈高人的指点下，逐渐成长为有担当、有侠义的少年英雄。最终，他们联手挫败了秃鹰的阴谋，捍卫了正义与和平。</p>
+            <p>整部剧集既有精彩纷呈的武打场面，又充满了少年人之间的真挚情感，传递了“自古英雄出少年”的豪情与信念。该剧汇集了众多实力派武打演员，动作设计扎实，人物塑造鲜明，是一部颇具口碑的武侠群像剧。</p>
+        </div>
+    </section>
+
+    <!-- 幕后团队 -->
+    <section class="container">
+        <h2 class="section-title">🎬 幕后主创</h2>
+        <div class="crew-section">
+            <div class="crew-card">
+                <span class="role-label">导演</span>
+                <h3>陈木川</h3>
+                <p>香港资深动作片导演，擅长把控大场面武打戏份，代表作包括多部经典武侠影视作品。</p>
+            </div>
+            <div class="crew-card">
+                <span class="role-label">武术指导</span>
+                <h3>程小东</h3>
+                <p>国际知名武术指导，动作设计飘逸潇洒，为本剧的打斗场面增添了独特的视觉美感。</p>
+            </div>
+            <div class="crew-card">
+                <span class="role-label">编剧</span>
+                <h3>张炭</h3>
+                <p>知名编剧，善于塑造丰满的人物群像，将传统侠义精神与现代叙事节奏巧妙结合。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 剧集看点 -->
+    <section class="container" style="margin-bottom:30px;">
+        <h2 class="section-title">🔥 剧集看点解析</h2>
+        <div style="background:#fff;padding:30px;border-radius:16px;box-shadow:0 3px 10px rgba(0,0,0,0.05);">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
+                <div>
+                    <h3 style="color:#8b4513;margin-bottom:10px;">1. 真功夫少年群像</h3>
+                    <p style="font-size:0.95rem;color:#5a4a3a;">片中的小演员大多有武术功底，动作戏不用替身，拳拳到肉的实战风格让观众看得过瘾。</p>
+                </div>
+                <div>
+                    <h3 style="color:#8b4513;margin-bottom:10px;">2. 老戏骨保驾护航</h3>
+                    <p style="font-size:0.95rem;color:#5a4a3a;">郑佩佩、计春华、于承惠等武打明星的加盟，让全剧的武戏水准和表演层次都大大提升。</p>
+                </div>
+                <div>
+                    <h3 style="color:#8b4513;margin-bottom:10px;">3. 侠义精神传承</h3>
+                    <p style="font-size:0.95rem;color:#5a4a3a;">剧集不只是打打杀杀，更聚焦少年们的成长与蜕变，将“侠之大者，为国为民”的精神贯穿始终。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="container faq-section">
+        <h2 class="section-title">❓ 常见问题</h2>
+        <div class="faq-item active">
+            <div class="faq-question">《自古英雄出少年》是哪一年播出的？</div>
+            <div class="faq-answer">该剧的具体首播年份可能因播出平台不同而有差异。观众可以通过剧集资料库或视频平台查看准确的首播日期。剧中聚集了多位知名武打演员，是2000年代初期具有代表性的武侠少年剧之一。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">剧中的小演员现在都怎么样了？</div>
+            <div class="faq-answer">当年参演该剧的释小龙、谢苗、吴磊等童星，如今都已成长为影视圈的中坚力量。释小龙和谢苗仍活跃在动作片领域，而吴磊已经成为了当红青年演员，发展道路各不相同但都取得了不错的成绩。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">这部剧和同名电影有什么关系吗？</div>
+            <div class="faq-answer">《自古英雄出少年》最初是1983年上映的电影，由内地与香港合拍，讲述少年英雄的故事。后来的电视剧版本是在电影基础上进行的延展和再创作，人物和情节更加丰富，可以看作是同一主题的不同影视作品。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">在哪里可以观看这部剧？</div>
+            <div class="faq-answer">建议在主流视频平台搜索“自古英雄出少年”，查看是否有正版授权资源。部分老剧可能需要通过DVD或者地方电视台的重播渠道观看，具体可关注各大平台的片库更新情况。</div>
+        </div>
+    </section>
+</main>
+
+<!-- 页脚 -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-links">
+            <a href="#">关于我们</a>
+            <a href="#">剧集收录标准</a>
+            <a href="#">版权声明</a>
+            <a href="#">联系我们</a>
+            <a href="#">影视资讯</a>
+        </div>
+        <div class="copyright">
+            <p>© 2024 影剧资料馆 · 仅供影视爱好者交流参考</p>
+            <p style="margin-top:8px;font-size:0.8rem;color:#6b5a48;">本站为影视信息聚合页面，不提供在线播放或下载服务</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // FAQ 交互
+    document.querySelectorAll('.faq-question').forEach(function(question) {
+        question.addEventListener('click', function() {
+            var item = this.parentElement;
+            var isActive = item.classList.contains('active');
+            // 关闭所有
+            document.querySelectorAll('.faq-item').forEach(function(faq) {
+                faq.classList.remove('active');
+            });
+            // 如果之前不是active，则打开
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
